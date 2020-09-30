@@ -164,3 +164,33 @@
 a {
     text-decoration: none;
 }
+
+.projectsBack {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.projectsBack p {
+    margin-right: .5em;
+}
+
+.projectsBack i {
+    margin: auto;
+    margin-right: 1em;
+} 
+
+.archiveBack {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.archiveBack p {
+    margin-left: .5em;
+}
+
+.archiveBack i {
+    margin: auto;
+    margin-left: 1em;
+} 
