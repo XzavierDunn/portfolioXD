@@ -14,10 +14,18 @@
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+.normal a {
+    color: white;
+}
+
 .lightMode {
     color: black;
     background-color: #bab5ab;
     background-image: url("../Images/asfalt-light.png");
+}
+
+.lightMode a {
+    color: black;
 }
 
 #lightMode {
@@ -144,4 +152,15 @@
     color: black;
     font-size: 50px;
     text-align: center;
+}
+
+.arrowArea {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
 }
