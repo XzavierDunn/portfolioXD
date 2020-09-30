@@ -129,3 +129,19 @@
     color: black;
     font-size: 30px;
 }
+
+.mainTextDark {
+    width: 100%;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.mainTextLight {
+    width: 100%;
+    font-family: 'VT323', monospace;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}

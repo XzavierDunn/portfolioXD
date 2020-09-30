@@ -5,6 +5,7 @@ let svg = document.getElementsByClassName('svg')[0];
 let favicon = document.querySelector("link[rel*='icon']");
 let about = document.getElementById('about');
 let model = document.getElementById('ex1');
+let mainText = document.getElementById('mainText');
 
 lightModebtn.addEventListener('click', () => {
     if (document.body.classList.contains('normal')) {
@@ -31,6 +32,10 @@ lightModebtn.addEventListener('click', () => {
         // Model
         model.classList.remove('myModalLight');
         model.classList.add('myModalDark');
+
+        // Main Text
+        mainText.classList.remove("mainTextDark");
+        mainText.classList.add("mainTextLight");
     } else {
       // Set innertext
       lightModebtn.innerText = "Light Mode?";
@@ -55,6 +60,10 @@ lightModebtn.addEventListener('click', () => {
         // Model
         model.classList.add('myModalLight');
         model.classList.remove('myModalDark');
+
+        // Main Text
+        mainText.classList.add("mainTextDark");
+        mainText.classList.remove("mainTextLight");
     }
 })
 
@@ -81,6 +90,10 @@ const setDark = () => {
     // Model
     model.classList.add('myModalLight');
     model.classList.remove('myModalDark');
+
+    // Main Text
+    mainText.classList.remove("mainTextLight");
+    mainText.classList.add("mainTextDark");
 }
 
 const setLight = () => {
@@ -104,6 +117,10 @@ const setLight = () => {
     // Model
     model.classList.remove('myModalLight');
     model.classList.add('myModalDark');
+
+   // Main Text
+   mainText.classList.add("mainTextLight");
+   mainText.classList.remove("mainTextDark");
 }
 
 function getCookie(cname) {
