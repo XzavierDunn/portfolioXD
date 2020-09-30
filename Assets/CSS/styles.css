@@ -1,0 +1,131 @@
+/* 
+    Fonts:
+    Hand drawn - font-family: 'Amatic SC', cursive; (Used in top nav bar "XD")
+    Fun Blocky - font-family: 'Major Mono Display', monospace; (Used in bottom nav bar)
+    Funky Retro - font-family: 'VT323', monospace;
+    Main Font - font-family: 'Cutive Mono', monospace;
+
+*/
+
+.normal {
+    color: white;
+    background-color: #000000;
+    background-image: url("../Images/asfalt-light.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.lightMode {
+    color: black;
+    background-color: #bab5ab;
+    background-image: url("../Images/asfalt-light.png");
+}
+
+#lightMode {
+    cursor: pointer;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+#top p {
+    padding-left: .5em;
+}
+
+#drawer {
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+@media (max-width: 530px) {
+    #drawer {
+        width: 50vw;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+
+        /* ADDED FOR MOBILE */
+        flex-direction: column;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+#navBtn {
+    fill: white;
+    height: 2em;
+    width: 1.2em;
+    float: right;
+    margin-top: .5em;
+
+    padding-right: .5em;
+}
+
+#navBtn:hover {
+    cursor: pointer;
+}
+
+#navBtnLight {
+    fill: black;
+    height: 2em;
+    width: 1.2em;
+    float: right;
+    margin-top: .5em;
+
+    padding-right: .5em;
+}
+
+#navBtnLight:hover {
+    cursor: pointer;
+}
+
+#bottom {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    font-family: 'Major Mono Display', monospace;
+    margin-bottom: 5px;
+}
+
+#bottom h6 {
+    margin: 0;
+}
+
+.aboutLight {
+    color: black;
+    text-decoration: none;
+}
+
+.aboutDark {
+    color: white;
+    text-decoration: none;
+}
+
+.myModalDark {
+    background-color: #000000!important;
+    background-image: url("../Images/asfalt-light.png")!important;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 30px;
+}
+
+.myModalLight {
+    background-color: #bab5ab!important;
+    background-image: url("../Images/asfalt-light.png")!important;
+    font-family: 'VT323', monospace;
+    color: black;
+    font-size: 30px;
+}
