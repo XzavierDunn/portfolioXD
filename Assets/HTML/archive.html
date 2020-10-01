@@ -18,7 +18,7 @@
 </head>
 <body class="normal">
     <nav id="top">
-        <a href="../../index.html" class="archiveBack">
+        <a id="archiveBack" href="../../index.html" class="archiveBack">
             <i id="right" class="fas fa-long-arrow-alt-left"></i> <p>Back</p> 
         </a>
         <p>XD</p>
@@ -26,7 +26,10 @@
 
     <!-- Main Text Area -->
     <div id="mainText" class="mainTextDark">
-        <h2>Archive</h2>
+        <h2 id="title">Archive</h2>
+        
+        <ul id="archiveMain"></ul>
+        <div id="post"></div>
     </div>
 
     <!-- Bottom Nav -->
@@ -35,11 +38,8 @@
     </nav>
 
     <!-- My Shiz -->
-    <script src="../JS/lightManager.js"></script>
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <!-- jQuery Modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="../JS/Tools/lightManager.js"></script>
+    <script src="../JS/Posts/getPostsData.js"></script>
+    <script src="../JS/Posts/retrievePost.js"></script>
 </body>
 </html>

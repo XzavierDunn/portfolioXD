@@ -204,3 +204,91 @@ a {
     margin: auto;
     margin-left: 1em;
 } 
+
+/* ARCHIVE STUFF */
+.archiveLiLight {
+    font-size: 40px;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.archiveLiDark {
+    font-size: 40px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.archiveHrLight {
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.archiveHrDark {
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    border: none;
+}
+
+@media (max-width: 783px) {
+    .archiveLiLight {
+        font-size: 25px;
+        color: black;
+    }
+    
+    .archiveLiDark {
+        font-size: 25px;
+        color: white;
+    }
+}
+
+@media (max-width: 511px) {
+    .archiveLiLight {
+        font-size: 20px;
+        color: black;
+
+        display: flex;
+        justify-content: center;
+    }
+    
+    .archiveLiDark {
+        font-size: 20px;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .archiveLiLight {
+        font-size: 15px;
+        color: black;
+
+        display: flex;
+        justify-content: center;
+    }
+    
+    .archiveLiDark {
+        font-size: 15px;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.archiveP {
+    font-size: 20px;
+    font-family: 'Cutive Mono', monospace;
+}
