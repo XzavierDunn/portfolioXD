@@ -130,12 +130,22 @@
     font-size: 30px;
 }
 
+.myModalDark a {
+    color: white;
+    text-decoration: underline;
+}
+
 .myModalLight {
     background-color: #bab5ab!important;
     background-image: url("../Images/asfalt-light.png")!important;
     font-family: 'VT323', monospace;
     color: black;
     font-size: 30px;
+}
+
+.myModalLight a {
+    color: black;
+    text-decoration: underline;
 }
 
 .mainTextDark {

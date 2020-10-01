@@ -17,16 +17,16 @@ const type = () => {
     if (count1 < text1.length) {
         type1.innerHTML += text1.charAt(count1);
         count1++;
-        setTimeout(type, 50)
+        setTimeout(type, 30)
     } else if (count2 < text2.length) {
         type2.innerHTML += text2.charAt(count2);
         count2++;
-        setTimeout(type, 50)
+        setTimeout(type, 25)
     } else if (count3 < projectText.length) {
         projects.innerHTML += projectText.charAt(count3);
         archive.innerHTML += archiveText.charAt(count3);
         count3++;
-        setTimeout(type, 50)
+        setTimeout(type, 20)
     } else {
         projects.innerHTML += "s";
         right.classList.add("fa-long-arrow-alt-right");
