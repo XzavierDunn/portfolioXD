@@ -44,6 +44,18 @@
     padding-left: .5em;
 }
 
+#topArchive {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+#topArchive p {
+    padding-right: .5em;
+}
+
 #drawer {
     width: 50vw;
     display: flex;
@@ -164,6 +176,28 @@
     text-align: center;
 }
 
+#archiveMain {
+    padding: 0;
+}
+
+@media (max-width: 530px) {
+    .mainTextDark {
+        font-size: 40px;
+    }
+    
+    .mainTextLight {
+        font-size: 40px;
+    }
+
+    .mainTextDark p {
+        padding: .5em;
+    }
+    
+    .mainTextLight p {
+        padding: .5em;
+    }
+}
+
 .arrowArea {
     width: 50%;
     display: flex;
@@ -212,6 +246,7 @@ a {
 
     display: flex;
     justify-content: center;
+    text-align: left;
 
     cursor: pointer;
 }
@@ -222,6 +257,7 @@ a {
 
     display: flex;
     justify-content: center;
+    text-align: left;
 
     cursor: pointer;
 }
@@ -272,7 +308,8 @@ a {
 
 @media (max-width: 400px) {
     .archiveLiLight {
-        font-size: 15px;
+        font-size: 30px;
+        padding: 0;
         color: black;
 
         display: flex;
@@ -280,7 +317,8 @@ a {
     }
     
     .archiveLiDark {
-        font-size: 15px;
+        font-size: 30px;
+        padding: 0;
         color: white;
 
         display: flex;
@@ -291,4 +329,24 @@ a {
 .archiveP {
     font-size: 20px;
     font-family: 'Cutive Mono', monospace;
+}
+
+#post {
+    margin: auto;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
+    width: 75%;
+    text-align: left;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.titleMarginBottom {
+    margin-bottom: 4em;
+}
+
+@media (max-width: 530px) {
+    .titleMarginBottom {
+        margin-bottom: 2em;
+    }
 }

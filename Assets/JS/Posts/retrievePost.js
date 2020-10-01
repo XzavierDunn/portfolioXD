@@ -8,12 +8,14 @@ let archiveTitle = document.getElementById('title');
 archiveMain.addEventListener('click', (e) => {
     let data = e.target.innerHTML;
     x = data.split(' ');
-    id = x[1]
+    console.log(x)
+    let id = x[1];
+    id = id.replace('%3Cbr%3E', '');
 
     let url = [];
     let title = "";
     for (let i = 0; i < x.length; i++) {
-        if (x[i] != "Title:" & x[i] != "Date:") {
+        if (x[i] != "Title:" & x[i] != "Date:" & x[i] != "<br>") {
             url.push(x[i])
             title += " " + x[i];
         } else if (x[i] === "Date:") {
@@ -21,9 +23,8 @@ archiveMain.addEventListener('click', (e) => {
         }
     }
 
-    url = url.join(' ')
-    console.log(title)
-
+    url = url.join('')
+    console.log(url)
     fetch(`../posts/${url}`, {method: "Get"})
     .then(res => res.text())
     .then(res => {
@@ -32,18 +33,10 @@ archiveMain.addEventListener('click', (e) => {
 
         archiveTitle.innerHTML = title;
         archiveTitle.style.fontSize = "30px";
+        archiveTitle.classList.add('titleMarginBottom');
 
-        let p = document.createElement('p');
-        p.classList.add('archiveP');
-        for (let i of res) {
-            if (i != "\n") {
-                p.innerHTML += i;
-            } else {
-                post.appendChild(p);
-                p = document.createElement('p');
-                p.classList.add('archiveP');
-    }
-        }
+        post.style.border = ".5px solid white";
+        post.insertAdjacentHTML('beforeend', res);
     })
 })
 

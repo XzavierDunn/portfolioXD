@@ -35,7 +35,7 @@ if (archiveMode === "Dark") {
 }
 
 
-fetch('http://127.0.0.1:5000/all', {method: "Get"})
+fetch('http://10.0.0.63:5000/all', {method: "Get"})
 .then(res => res.json())
 .then(res => display(res))
 
@@ -44,7 +44,7 @@ const display = (data) => {
         let li = document.createElement('li');
         let hr = document.createElement('hr');
 
-        li.innerHTML = `Title: ${i} Date: ${data[i]}`;
+        li.innerHTML = `Title: ${i} <br/> Date: ${data[i]}`;
         li.classList.add(archiveStyle);
         hr.classList.add(archiveHrStyle);
 

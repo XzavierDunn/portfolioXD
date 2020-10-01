@@ -45,8 +45,8 @@ function getCookie(cname) {
 
 // Check cookie to set light or dark before load
 let mode = getCookie('mode');
-if (mode === "Dark") {
-    setDark();
+  if (mode === "Dark") {
+  setDark();
 } else if (mode === "Light") {
     setLight();
 } else {
